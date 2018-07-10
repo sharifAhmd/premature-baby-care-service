@@ -1,0 +1,219 @@
+{% extends 'hosmebase.html' %}  <!-- A way to extend the base html template -->
+{% load static  %}
+
+{% block head %}
+	<title>Homepage</title>
+{% endblock %}
+
+{% block body %}
+
+    <!--script-for-menu-->
+    <script>
+		$("span.menu").click(function(){
+			$(" ul.navig").slideToggle("slow" , function(){
+			});
+		});
+	</script>
+	    <!--script-for-menu-->
+
+	<!--banner-starts-->
+	<div class="banner">
+		<section class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+					<li>
+					<div class="banner1">
+						<div class="container">
+							<div class="banner-text">
+								<p>Vivamus id dui et augue</p>
+								<h3>Caring Baby Sitters For Your Kids</h3>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="banner2">
+						<div class="container">
+							<div class="banner-text">
+								<p>Vivamus id dui et augue</p>
+								<h3>Caring Baby Sitters For Your Kids</h3>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="banner1">
+						<div class="container">
+							<div class="banner-text">
+								<p>Vivamus id dui et augue</p>
+								<h3>Caring Baby Sitters For Your Kids</h3>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="banner2">
+						<div class="container">
+							<div class="banner-text">
+								<p>Vivamus id dui et augue</p>
+								<h3>Donec eu dolor ac erat sodales rutrum</h3>
+							</div>
+						</div>
+					</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<!--banner-end-->
+
+	<!--FlexSlider-->
+	<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+	<script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+    </script>
+	<!--End-slider-script-->
+
+    <!--welcome-->
+    <div class="welcome">
+        <div class="container">
+        <h2>Welcome</h2>
+            <div class="col-md-7 welcome-left wow fadeInLeft animated" data-wow-delay=".5s">
+                <h5>Utdolor dapegetel jhast ementum velursus eleifend elineanctor wisirliquam erat vpatis Miastas .</h5>
+                <p>Integer rutrum ante luases lacus uisque nulla kartsatrse basreserta. Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo.</p>
+            </div>
+            <div class="col-md-5 welcome-right wow fadeInRight animated" data-wow-delay=".5s">
+            <h4>Find Your Local baby Care Center</h4>
+            <p>Tincidunt ut laoreet dolore magna aliquam erat volutpat Lorem ipsum dolor sit ameconsectetuer adipiscing elit, sed diam</P>
+            <div class="news">
+                    <div class="form-group">
+                    <form action="#" method="post">
+                        <input type="text" name="search" class="form-control" placeholder="Search">
+                        <button type="submit" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+<!--welcome-->
+
+<!--services-->
+    <div class="services">
+		<div class="container">
+			<h3 class="title">Services</h3>
+			<div class="col-md-6 servc-grids wow fadeInLeft animated" data-wow-delay=".5s">
+				<div class="servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>cum soluta nobis est eligendi</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+						reiciendis voluptatibus maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>cum soluta nobis est eligendi</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+							reiciendis voluptatibus maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+
+			</div>
+			<div class="col-md-6 servc-grids1 wow fadeInRight animated" data-wow-delay=".5s">
+
+				<div class="servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>cum soluta nobis est eligendi</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+						reiciendis voluptatibus maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>cum soluta nobis est eligendi</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+							reiciendis voluptatibus maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+<!--services-->
+    <div class="events">
+		<div class="container">
+			<h3>News</h3>
+			<p class="fugiat colr">Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+				esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+				fugiat quo voluptas nulla pariatur</p>
+			<div class="events-grid">
+
+				<div class="col-md-4 events-grid-left wow fadeInLeft animated" data-wow-delay=".5s"><a href="singlepage.html">
+					<div class="events-grid-left-top">
+						<p><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i><span>April 15th 2016 at 11:30 AM</span></p>
+					</div>
+
+					<div class="events-pos">
+						<p>vel illum qui dolorem eum
+							fugiat quo voluptas nulla pariatur</p>
+					</div></a>
+				</div>
+				<div class="col-md-4 events-grid-left animated wow fadeInDown animated animated" data-wow-duration="1200ms" data-wow-delay="500ms">
+				<a href="singlepage.html">
+					<div class="events-grid-left-top">
+						<p><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i><span>April 18th 2016 at 1:30 AM</span></p>
+					</div>
+
+					<div class="events-pos">
+						<p>vel illum qui dolorem eum
+							fugiat quo voluptas nulla pariatur</p>
+					</div>
+					</a>
+				</div>
+				<div class="col-md-4 events-grid-left wow fadeInRight animated" data-wow-delay=".5s">
+				<a href="singlepage.html">
+					<div class="events-grid-left-top">
+						<p><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i><span>April 25th 2016 at 1:30 AM</span></p>
+					</div>
+
+					<div class="events-pos">
+						<p>vel illum qui dolorem eum
+							fugiat quo voluptas nulla pariatur</p>
+					</div>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
