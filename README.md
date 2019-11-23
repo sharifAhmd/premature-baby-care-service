@@ -7,14 +7,14 @@ This project is done with python framework Django. This project includes feature
 ![Home](https://github.com/sharif4855/premature-baby-care-service/blob/master/images/home.png)
 Home page of the myPremie website.
 
-
+### Problem and solution page
 ![Problem](https://github.com/sharif4855/premature-baby-care-service/blob/master/images/problem.png)
 This is the sample view for the problem and solution page of our website. 
 
-
+### Nearby Hospital page
 ![nearby](https://github.com/sharif4855/premature-baby-care-service/blob/master/images/nearby.png)
 This page shows the nearby hospitals of a user. First the user has to give the permission to access the location of the user.
 
-
+### Guideline page
 ![guideline](https://github.com/sharif4855/premature-baby-care-service/blob/master/images/guideline.png)
 This page illustrates informations of different common problembs by which a premature baby can be easily infected
