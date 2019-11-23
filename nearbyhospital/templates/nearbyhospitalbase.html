@@ -6,6 +6,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+<meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map-canvas {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+  		height: 550px;
+ 		margin: 2px auto;
+      	width: 100%;
+}
+    </style>
+
+
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 
@@ -14,14 +35,8 @@
 <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
 <link href="{% static 'css/owl.carousel.css'%} " rel="stylesheet">
 <script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/map.js' %}"></script>
 
-<!--JS for animate
-	<link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css" media="all">
-		<script src="{% static 'js/wow.min.js' %}"></script>
-		<script>
-			new WOW().init();
-		</script>
-	//end-animate-->
 
 {% block head %}		<!--This is the way to make a base html ,so that extra code can be added in the other file-->
     <title>Mypremie</title>
@@ -30,36 +45,21 @@
 </head>
 
 <body>
-	<!--header-top-->
-	<div class="header-top">
-		<div class="container">
-			<div class="head-main">
 
-				<div class="col-md-12 head-middle animated wow fadeInDown animated animated" data-wow-duration="1200ms" data-wow-delay="500ms" >
-					<h1 ><a class="text-center" href="index.html">Mypremie</a></h1>
-				</div>
-
-
-
-
-				<div class="clearfix"></div>
+<!--header-top-->
+	<nav class=" navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/home/">Mypremie</a>
 			</div>
-		</div>
-	</div>
-	<!--header-top-->
-	<!--navigation-starts-->
-	<div class="navigation animated wow fadeInDown animated animated" data-wow-duration="1200ms" data-wow-delay="500ms">
-		<span class="menu"></span>
-			<ul class="navig cl-effect-16">
-				<li ><a href="/home/">Home</a></li>
-				<li><a href="/loginandregister/">Log In</a></li>
-				<li class="active"><a href="/nearbyhospital/">Nearby Hospital</a></li>
-				<li><a href="/problemandsolution/">Problem & Solution</a></li>
-				<li><a href="/review/">Review</a></li>
-
+			<ul class="nav navbar-nav">
+				<li><a href="/home/">হোমপেজ</a></li>
+				<li ><a href="/problemandsolution/">সমস্যা এবং সমাধান</a></li>
+				<li class="active"><a href="/nearbyhospital/">কাছাকাছি হাসপাতাল</a></li>
+                <li ><a href="/guideline/">গাইডলাইন</a></li>
 			</ul>
-	</div>
-	<!--navigation-end-->
+		</div>
+	</nav>
 
 {% block body %}
 

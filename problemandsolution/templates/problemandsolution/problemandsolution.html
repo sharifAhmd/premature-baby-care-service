@@ -6,71 +6,46 @@
 
 {% block body %}
 
-<!--
-<div class="container">
-  <h2>Collapsible Panel</h2>
-  <p>Click on the collapsible panel to open and close it.</p>
-  <div class="panel-group">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" href="#collapse1" class>Collapsible panel</a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="well">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores corporis cum debitis earum error expedita explicabo hic id in numquam officia officiis perspiciatis sed sit, suscipit, ullam ut!</p>
-          <h1>মেসেজ এর মাধ্যমে শ্বাস উদ্দীপিত করা। খব বেশী হলে ডাক্তার CPAP যন্ত্রের টিউব বাচ্চার নাকে সংযুক্ত করতে পারেন অথবা গলায় প্রবেশ করাতে পারেন যান্ত্রিক বাউচলাচলের জন্য। ৬মাসের বেশী এর প্রয়োজন হবে না।</h1>
-          </div>
 
 
-        </div>
-          <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+<div>
+    <br><br>
 </div>
-        <div class="panel-footer">
 
-        </div>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <p> প্রি-ম্যাচিউর শিশুদের মধ্যে কিছু রোগ প্রায় ই দেখা যাই।  তার মধ্যে অন্যতম কিছু রোগ হচ্ছে Apnea(অ্যাপনিয়া), Bronchopulmonary Dysplasia (ব্রোংকোপ্লোননারি ডিসপ্লাসিয়া (বিপিডি)), Jaundice(জন্ডিস), Respiratory Syncytial Virus (RSV(রেসপিরেটরি সিনসিটিএল ভাইরাস), Intraventricular Hemorrhage(ইন্ট্রেনট্রিকুলার হ্যামারেজ), Respiratory distress syndrome( রেসপিরেটরি ডিস্ট্রেস সিনড্রোম), Retinopathy of Prematurity (ROP or Retrolental Fibroplasia) ইত্যাদি। </p>
+        <a href="https://en.wikipedia.org/wiki/Preterm_birth" class="btn btn-primary" target="_blank">আরো জানতে ক্লিক করুন </a>
       </div>
     </div>
-  </div>
-</div>
--->
-
 
 {% for item in items %}
 
 <div class="container">
+    <div class="list-group">
+        <h3 class="list-group-item active">{{ item.problemname }}</h3>
+        <p class="list-group-item list-group-item-info">সমস্যার বিবরণ</p>
 
-  <div class="panel-group">
-      <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" href="#{{ item.pk }}">{{ item.problemname }}</a>
-            </h4>
-          </div>
-
-          <div id="{{ item.pk }}" class="panel-collapse collapse">
-            <div class="panel-body">
-              <div class="well">
-                <p>  Details</p>
-                <p>{{ item.problemdetails }}</p>
-                <p> Sign and symptoms </p>
-                <p> {{ item.problemsignandsymptom }}</p>
-                <p>Solution </p>
-                <p> {{ item.solution }}</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="panel-footer">
-
-          </div>
+        <div class="well well-lg">
+            <p>{{ item.problemdetails }}</p>
         </div>
-      </div>
+
+        <p class="list-group-item list-group-item-warning">সমস্যার লক্ষণ</p>
+
+        <div class="well">
+            <p>{{ item.problemsignandsymptom }}</p>
+        </div>
+
+        <p class="list-group-item list-group-item-success">সমস্যার সমাধান</p>
+
+        <div class="well">
+            <p>{{ item.solution }}</p>
+        </div>
+        <a href="{{ item.youtubeurl }}" class="btn btn-primary " target="_blank">আরো জানতে ক্লিক করুন </a>
+
+
     </div>
-  </div>
+</div>
 
 {% endfor %}
 {% endblock %}

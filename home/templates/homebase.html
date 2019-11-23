@@ -1,0 +1,100 @@
+{% load static  %}		<!--For Loading The static files-->
+
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel='stylesheet' href="{% static 'css/bootstrap.css' %}"  type='text/css' />
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type='text/css' />
+<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'css/owl.carousel.css'%} " rel="stylesheet">
+<script src="{% static 'js/jquery.min.js' %}"></script>
+
+<!--JS for animate-->
+	<link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css" media="all">
+		<script src="{% static 'js/wow.min.js' %}"></script>
+		<script>
+			new WOW().init();
+		</script>
+	<!--//end-animate-->
+
+{% block head %}		<!--This is the way to make a base html ,so that extra code can be added in the other file-->
+    <title>Mypremie</title>
+{% endblock %}			<!--After starting the block,the block should be ended-->
+
+</head>
+
+<body>
+	<!--header-top-->
+	<nav class=" navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/home/">Mypremie</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/home/">হোমপেজ</a></li>
+				<li><a href="/problemandsolution/">সমস্যা এবং সমাধান</a></li>
+				<li><a href="/nearbyhospital/">কাছাকাছি হাসপাতাল</a></li>
+				<li ><a href="/guideline/">গাইডলাইন</a></li>
+			</ul>
+
+		</div>
+	</nav>
+	<!--header-top-->
+
+
+
+{% block body %}
+
+{% endblock %}
+
+	<!--footer-starts-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+			<div class="col-md-6 footer-right wow fadeInLeft animated" data-wow-delay=".5s">
+					<form action="#" method="post">
+						<input type="text" value="Your Email" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}">
+						<input type="submit" value="Subscribe">
+					</form>
+					<p>© 2018 Premature Baby Care. All Rights Reserved  </p>
+				</div>
+				<div class="col-md-3 footer-left animated wow fadeInUp animated animated" data-wow-duration="1200ms" data-wow-delay="500ms">
+					<div class="a-1">
+						<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+						<p>Northsouth University, Bangladesh.</p>
+					</div>
+					<div class="a-2">
+						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						<p><a href="mailto:example@email.com">contact@mypremie.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-3 footer-left wow fadeInRight animated" data-wow-delay=".5s">
+					<div class="a-1">
+						<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+						<p>+8801234 56 78 90</p>
+					</div>
+					<div class="a-2">
+						<span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+						<p>+8802 123 456</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--footer-end-->
+
+
+</body>
+
+
+</html>

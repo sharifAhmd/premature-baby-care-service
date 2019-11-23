@@ -19,11 +19,10 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-
+    path('', include('home.urls')),
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),        #All the apps main path should be included here
-    path('loginandregister/',include('loginandregister.urls')),
     path('nearbyhospital/', include('nearbyhospital.urls')),
     path('problemandsolution/', include('problemandsolution.urls')),
-    path('review/', include('review.urls')),
+    path('guideline/', include('guideline.urls')),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)      #Have not known yet!

@@ -1598,8 +1598,10 @@ pre code {
   }
 }
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -4074,7 +4076,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+
   }
 }
 @media (min-width: 768px) {
@@ -4178,7 +4180,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
   height: 50px;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 35px;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -4492,7 +4494,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
+  background-color: #182b45;
   border-color: #080808;
 }
 .navbar-inverse .navbar-brand {

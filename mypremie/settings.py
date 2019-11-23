@@ -21,10 +21,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'home',                     #Everytime I add any app, I have to write the the app name in the installed app
-    'loginandregister',
     'nearbyhospital',
     'problemandsolution',
-    'review',
+    'guideline',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -48,7 +47,7 @@ ROOT_URLCONF = 'mypremie.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

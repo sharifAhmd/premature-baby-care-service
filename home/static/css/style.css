@@ -202,7 +202,7 @@ ul.navig {
 /*--banner-start--*/
 /*-- w3layouts --*/
 .banner1 {
-	background: url(../images/2.jpg) no-repeat;
+	background: url(../images/pic.jpg) no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -219,6 +219,17 @@ ul.navig {
 	-ms-background-size: cover;
 	min-height: 600px;
 }
+
+.banner3 {
+	background: url(../images/pic.jpg) no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	min-height: 600px;
+}
+
 .banner-text p{
 	font-size:25px;
 	color:#182B45;

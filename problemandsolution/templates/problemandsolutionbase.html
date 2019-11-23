@@ -8,7 +8,7 @@
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
@@ -22,14 +22,7 @@
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/jquery.minn.js' %}"></script>
 
-<!--JS for animate
-	<link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css" media="all">
-		<script src="{% static 'js/wow.min.js' %}"></script>
-		<script>
-			new WOW().init();
-		</script>
-	//end-animate-->
-
+	
 {% block head %}		<!--This is the way to make a base html ,so that extra code can be added in the other file-->
     <title>Mypremie</title>
 {% endblock %}			<!--After starting the block,the block should be ended-->
@@ -37,36 +30,23 @@
 </head>
 
 <body>
-	<!--header-top-->
-	<div class="header-top">
-		<div class="container">
-			<div class="head-main">
-
-				<div class="col-md-12 head-middle animated wow fadeInDown animated animated" data-wow-duration="1200ms" data-wow-delay="500ms" >
-					<h1 ><a class="text-center" href="index.html">Mypremie</a></h1>
-				</div>
 
 
-
-
-				<div class="clearfix"></div>
+<!--header-top-->
+	<nav class=" navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/home/">Mypremie</a>
 			</div>
-		</div>
-	</div>
-	<!--header-top-->
-	<!--navigation-starts-->
-	<div class="navigation animated wow fadeInDown animated animated" data-wow-duration="1200ms" data-wow-delay="500ms">
-		<span class="menu"></span>
-			<ul class="navig cl-effect-16">
-				<li ><a href="/home/">Home</a></li>
-				<li><a href="/loginandregister/">Log In</a></li>
-				<li><a href="/nearbyhospital/">Nearby Hospital</a></li>
-				<li	class="active"><a href="/problemandsolution/">Problem & Solution</a></li>
-				<li><a href="/review/">Review</a></li>
-
+			<ul class="nav navbar-nav">
+				<li><a href="/home/">হোমপেজ</a></li>
+				<li class="active"><a href="/problemandsolution/">সমস্যা এবং সমাধান</a></li>
+				<li><a href="/nearbyhospital/">কাছাকাছি হাসপাতাল</a></li>
+				<li><a href="/guideline/">গাইডলাইন</a></li>
 			</ul>
-	</div>
-	<!--navigation-end-->
+
+		</div>
+	</nav>
 
 {% block body %}
 
